@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="post">
+<a class="back-to-blog" href="{{ '/blog/' | relative_url }}">← All posts</a>
+<header><p class="eyebrow">Learning notes{% if page.tags.size > 0 %} / {{ page.tags | join: ' · ' | escape }}{% endif %}</p>
+<h1>{{ page.title | escape }}</h1>
+<p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time> · {{ site.data.profile.name | escape }}</p>
+{% if page.description %}<p class="lead">{{ page.description | escape }}</p>{% endif %}</header>
+<div class="post-body">{{ content }}</div>
+<div class="post-end"><a href="{{ site.data.profile.linkedin }}" target="_blank" rel="noopener noreferrer">Discuss this post on LinkedIn ↗</a></div>
+</article>

@@ -1,0 +1,4 @@
+<section class="blog-preview" id="blog"><div class="section-head"><div><div class="eyebrow">04 / Learning out loud</div><h2>Notes from my journey.</h2></div><a class="textlink small" href="{{ '/blog/' | relative_url }}">Visit the blog →</a></div>
+{% if site.posts.size > 0 %}<div class="post-list">{% for post in site.posts limit: 2 %}{% include post-card.html post=post %}{% endfor %}</div>
+{% else %}<div class="empty-state"><h3>A new chapter, coming soon.</h3><p>I'll be sharing notes on data science, coursework, and the tools I'm learning. My first post is on the way.</p><a class="textlink small" href="{{ '/blog/' | relative_url }}">Explore the blog →</a></div>{% endif %}
+</section>

@@ -1,0 +1,12 @@
+---
+layout: default
+title: Blog
+description: Notes on data science, coursework, and learning new tools by Alperen Yarimbas.
+permalink: /blog/
+---
+<div class="blog-intro"><p class="eyebrow">The learning notebook</p><h1>Ideas, practice,<br>and discoveries.</h1><p class="lead">Notes on data science, coursework, and the tools I'm learning along the way.</p></div>
+{% if site.posts.size > 0 %}
+<div class="blog-tools" hidden data-blog-tools><label for="blog-search" class="small">Search posts by title, topic, or summary</label><input id="blog-search" type="search" placeholder="Search learning notes…" autocomplete="off"></div>
+<div class="post-list">{% for post in site.posts %}{% include post-card.html post=post %}{% endfor %}</div>
+<p class="no-results small" role="status" aria-live="polite" hidden>No posts match your search.</p>
+{% else %}<div class="empty-state"><h3>My first post is on the way.</h3><p>This is where I'll share what I'm learning, explain coursework, and reflect on working with data. There are no published posts yet.</p><div class="actions"><a class="button" href="{{ '/' | relative_url }}#projects">Explore my coursework →</a><a class="button" href="{{ site.data.profile.github }}" target="_blank" rel="noopener noreferrer">Find me on GitHub ↗</a></div></div>{% endif %}

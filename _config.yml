@@ -1,0 +1,24 @@
+title: Alperen Yarimbas
+description: Data Science senior at the University of North Texas, graduating in December 2026. Coursework, skills, and learning notes.
+url: "https://alperenyrmbs.github.io"
+baseurl: ""
+lang: en
+timezone: America/Chicago
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:title/
+future: false
+show_drafts: false
+exclude:
+  - README.md
+  - docs
+  - templates
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

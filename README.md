@@ -1,32 +1,35 @@
-# Alperen Yarimbas — Personal Portfolio
+# Alperen Yarimbas — Portfolio & Blog
 
-A static personal website introducing my education, current toolkit, and selected university coursework as I prepare for entry-level data science and analytics opportunities.
+**Live site:** https://alperenyrmbs.github.io/  
+**Blog:** https://alperenyrmbs.github.io/blog/
 
-**Live site:** https://alperenyrmbs.github.io/
+A static Jekyll site for my education, coursework, and learning notes. GitHub Pages builds and publishes it through the existing Jekyll workflow.
 
-## About
+## Shared structure
 
-Data Science senior at the University of North Texas. Expected graduation: December 2026.
+| File or folder | Purpose |
+| --- | --- |
+| `_config.yml` | Site settings, URLs, publishing defaults |
+| `_data/profile.yml` | Name, education, LinkedIn, and GitHub links |
+| `_data/skills.json`, `_data/projects.json` | Skills and project content |
+| `_layouts/default.html` | Shared page shell |
+| `_layouts/post.html` | Shared article layout |
+| `_includes/` | Shared navigation, footer, metadata, and post cards |
+| `assets/css/style.css` | Central stylesheet |
+| `assets/js/main.js` | Central navigation and blog-search behavior |
+| `index.html` | Homepage content |
+| `blog/index.html` | Automatically generated post listing |
+| `_posts/` | Published Markdown posts; create this folder with your first post |
+| `_drafts/` | Unpublished drafts; visible in this public repository |
+| `templates/blog-post.md` | Copyable writing template, excluded from the live site |
+| `docs/BLOG_GUIDE_TR.md` | Turkish writing and publishing guide |
 
-## Site sections
+## Writing a post
 
-- About and education
-- Skills learned through coursework
-- Links to selected repositories
-- LinkedIn contact link
+Create `_posts/YYYY-MM-DD-short-title.md`, copy the front matter and structure from `templates/blog-post.md`, and write in Markdown. Commit to `main` to publish. Use today's date or an earlier date; future-dated posts are not published. The blog and homepage update automatically.
 
-## Technical setup
+Drafts are not published to the website, but all committed files in this public repository can be read on GitHub. Keep private material outside the repository.
 
-The site is a single index.html file containing HTML and CSS. It has no build step or external JavaScript dependencies. Open index.html in a browser to preview it locally. GitHub Pages serves the site.
+## Local preview
 
-## Files and scope
-
-- `index.html`: page content, inline CSS, and an inline SVG illustration.
-- `.github/`: GitHub workflow configuration.
-- `README.md`: project overview and local preview instructions.
-
-## Current limitations
-
-This is a static introduction and collection of links, with no backend, database, contact form, or analytics application. Education and skills describe my student background. Linked repositories are coursework and learning exercises.
-
-[LinkedIn](https://www.linkedin.com/in/alperenyr/) · [GitHub profile](https://github.com/alperenyrmbs)
+A Jekyll build is needed to render templates. Opening source index.html directly does not render the complete site. Use the deployed GitHub Pages site or a compatible local Jekyll environment for preview.

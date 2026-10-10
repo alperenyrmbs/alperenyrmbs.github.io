@@ -1,0 +1,10 @@
+<header><nav aria-label="Main navigation">
+<a href="{{ '/' | relative_url }}" class="brand" aria-label="Alperen Yarimbas home">AY<span class="accent-text">.</span></a>
+<button class="nav-toggle" type="button" aria-controls="navigation-links" aria-expanded="false">Menu</button>
+<div class="navlinks" id="navigation-links">
+<a href="{{ '/' | relative_url }}#about">About</a>
+<a href="{{ '/' | relative_url }}#skills">Skills</a>
+<a href="{{ '/' | relative_url }}#projects">Projects</a>
+<a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog/' %} aria-current="page"{% endif %}>Blog</a>
+<a href="{{ '/' | relative_url }}#contact">Connect ↗</a>
+</div></nav></header>

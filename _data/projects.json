@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Streamlit Demo",
+    "description": "A coursework repository containing a Streamlit demo notebook. Explore the notebook and source on GitHub.",
+    "tag": "Jupyter Notebook \u00b7 Classwork",
+    "url": "https://github.com/alperenyrmbs/streamlit"
+  },
+  {
+    "title": "Data Science Coursework",
+    "description": "A collection of notebook-based work in my DTSC 3020 homework repository.",
+    "tag": "Jupyter Notebook \u00b7 Classwork",
+    "url": "https://github.com/alperenyrmbs/homework-3dtsc3020"
+  },
+  {
+    "title": "Python Lists",
+    "description": "A Python homework repository focused on lists, part of my programming practice.",
+    "tag": "Python \u00b7 Classwork",
+    "url": "https://github.com/alperenyrmbs/list"
+  }
+]
