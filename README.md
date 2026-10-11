@@ -1,4 +1,4 @@
-# Alperen Yarimbas — Portfolio & Blog
+# Alperen Y. — Portfolio & Blog
 
 **Live site:** https://alperenyrmbs.github.io/  
 **Blog:** https://alperenyrmbs.github.io/blog/
