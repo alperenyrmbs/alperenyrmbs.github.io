@@ -1,0 +1,11 @@
+{% if site.google_analytics %}
+<link rel="stylesheet" href="{{ '/assets/css/analytics.css' | relative_url }}">
+<section id="analytics-consent" aria-label="Analytics privacy preferences" hidden>
+  <p>Optional analytics: with your permission, Google Analytics uses cookies to measure page visits and interactions. Google receives usage and device information. You can use this site without accepting and change your choice at any time. Your choice is saved on this device for 180 days.</p>
+  <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google privacy policy</a></p>
+  <button type="button" data-analytics-choice="granted">Accept analytics</button>
+  <button type="button" data-analytics-choice="denied">Reject analytics</button>
+</section>
+<button type="button" id="analytics-settings" hidden>Analytics preferences</button>
+<script src="{{ '/assets/js/analytics.js' | relative_url }}" data-measurement-id="{{ site.google_analytics | escape }}" defer></script>
+{% endif %}

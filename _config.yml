@@ -9,6 +9,7 @@ highlighter: rouge
 permalink: /blog/:title/
 future: false
 show_drafts: false
+google_analytics: G-42PE5PM40E
 plugins:
   - jekyll-sitemap
 exclude:
