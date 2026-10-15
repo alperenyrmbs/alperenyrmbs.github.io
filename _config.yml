@@ -9,6 +9,8 @@ highlighter: rouge
 permalink: /blog/:title/
 future: false
 show_drafts: false
+plugins:
+  - jekyll-sitemap
 exclude:
   - README.md
   - docs
@@ -22,3 +24,9 @@ defaults:
       type: posts
     values:
       layout: post
+
+  # Keep Google's ownership file public, but omit it from search discovery.
+  - scope:
+      path: google03805a4ad598cb84.html
+    values:
+      sitemap: false
